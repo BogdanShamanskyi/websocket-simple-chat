@@ -11,6 +11,6 @@ app.use(express.static('public'))
 
 app.set('view engine', 'pug')
 
-app.get('/', (req, res) => res.render('index2'))
+app.get('/', (req, res) => res.render('index'))
 
 app.listen(PORT, () => console.log('Server start on Port: ' + PORT))
