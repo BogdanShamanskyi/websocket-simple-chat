@@ -3,9 +3,9 @@ const Websocket = require('websocket').server
 const port = 3000;
 const ConnectionHandler = require('./ConnectionHandler')
 
-const httpServer = http.createServer((req, res) => {
-    res.writeHead(200);
-    res.end()
+const httpServer = http.createServer((req, {end, writeHead}) => {
+    writeHead(200);
+    end()
 })
 
 httpServer.listen(port, () => {

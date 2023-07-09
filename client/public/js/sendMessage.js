@@ -24,12 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Socket error')
     }
 
-    const button = document.querySelector('button')
+    const button = document.querySelector('.send-message')
 
     button.addEventListener('click', event => {
         writeLine(message.value)
         socket.send(message.value)
         message.value = ''
     })
+
+
 
 })

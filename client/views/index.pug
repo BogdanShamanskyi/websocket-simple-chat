@@ -8,14 +8,51 @@ html(lang='en')
         link(rel='stylesheet', href='/css/style.css')
         script(src='/js/sendMessage.js')
     body
-        .center
-            .form
-                h2 Поки що це чат, а потім побачимо
-                input.message(type='text')
-                br
-                button Відправити
-            .messages_top
-                h2 Messages here
-                p Перше привітальне повідомлення від системи. Приємного користування.
+        h1.header ARENA GAME
+        .container
+            .leftTeam &nbsp;&nbsp;LEFT TEAM
+                ol.users-list
+                    li.user USERNAME 100%
+                    li.user USERNAME 100%
+                    li.user USERNAME 100%
+                    li.user USERNAME 100%
+
+            .panel
+                .select-enemy
+                    select.enemy-list
+                        option.enemy USERNAME 100%
+                        option.enemy USERNAME 100%
+                        option.enemy USERNAME 100%
+                        option.enemy USERNAME 100%
+                .zones
+
+                    .attack &nbsp;&nbsp;&nbsp;Attack
+                        .user-head Head
+                        .user-breast Breast
+                        .user-belly Belly
+                        .user-groin Groin
+                        .user-legs Legs
+
+                    .block &nbsp;&nbsp;&nbsp;Block
+                        .user-head Head
+                        .user-breast Breast
+                        .user-belly Belly
+                        .user-groin Groin
+                        .user-legs Legs
+
+                .button-attack
+                    button.attack Attack
+
+            .rightTeam &nbsp;&nbsp;RIGHT TEAM
+                ol.users-list
+                    li.user USERNAME 100%
+                    li.user USERNAME 100%
+                    li.user USERNAME 100%
+                    li.user USERNAME 100%
+
+        .chat
             .messages
                 ol.messages_list
+            .form
+                input.message(type='text')
+                button.send-message Відправити

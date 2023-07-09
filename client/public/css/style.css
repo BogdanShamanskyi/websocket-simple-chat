@@ -1,6 +1,69 @@
-.center {
+ html * {
+     font-family: 'Arial', sans-serif;
+ }
+.header {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.users-list * {
+    margin: 5px;
+}
+.select-enemy {
+    text-align: center;
+}
+
+.enemy-list {
+    width: 170px;
+    height: 30px;
+}
+
+.zones {
+    display: flex;
+    justify-content: center;
+}
+
+.zones * {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000000;
+}
+
+.button-attack {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button.attack {
+    width: 170px;
+    height: 35px;
+    background-color: #CC7474;
+}
+
+ ol li{
+     list-style-type: none;
+ }
+
+.leftTeam *, .rightTeam * {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000000;
+}
+
+.panel {
     margin: 0 auto;
     width: 300px;
+}
+
+.chat {
+    margin: 0 auto;
+    width: 800px;
 }
 .form {
     text-align: center;
@@ -12,11 +75,11 @@
 }
 
 .message {
-    width: 250px;
+    width: 700px;
     border: 1px solid #000;
 }
 
-button {
+.send-message {
     width: 100px;
     background-color: seashell;
     font-weight: bold;
@@ -25,7 +88,7 @@ button {
 
 .messages {
     border: 2px solid #000000;
-    text-align: center;
+    text-align: left;
 }
 
 ol {
